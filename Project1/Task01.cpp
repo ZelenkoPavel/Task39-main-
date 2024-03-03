@@ -5,7 +5,6 @@ using namespace std;
 #define horizontal 100
 #define vertical 100
 
-
 void random_init_matrix(int matrix[vertical][horizontal], int max, int min, int size);
 string convert_matrix_to_string(int matrix[vertical][horizontal], int size);
 
