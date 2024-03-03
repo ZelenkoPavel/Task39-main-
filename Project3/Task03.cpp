@@ -8,7 +8,7 @@ using namespace std;
 void random_init_matrix(int matrix[size][size], int max, int min, int entered_size);
 string convert_matrix_to_string(int matrix[size][size], int entered_size);
 
-bool diagonal_matrix(int matrix[size][size], int entered_size);
+bool identity_matrix(int matrix[size][size], int entered_size);
 
 int main() {
 
@@ -26,8 +26,8 @@ int main() {
 
 	cout << convert_matrix_to_string(matrix, entered_size) << endl;
 
-	string result = diagonal_matrix(matrix, entered_size)
-		? "Yes, there is diagonal matrix" : "No, there isn't diagonal matrix";
+	string result = identity_matrix(matrix, entered_size)
+		? "Yes, there is identity matrix" : "No, there isn't identity matrix";
 
 	cout << "Result - " << result << endl;
 
